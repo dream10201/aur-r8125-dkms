@@ -22,6 +22,7 @@ sha256sums=('01fbdb249b7ba2984df93a4bd11aecddd1ed904c6be10fc5d776e94b3110b2bf'
 prepare() {
   patch -Np0 <6.1.patch
   patch -Np0 <throughput.patch
+  patch -Np0 <aspm_rx_tx.patch
 }
 
 package() {
