@@ -11,7 +11,6 @@ pkgbase = r8125-dkms
 	conflicts = r8125
 	source = http://rtitwww.realtek.com/rtdrivers/cn/nic1/r8125-9.011.00.tar.bz2
 	source = dkms.conf
-	source = 6.1.patch
 	source = aspm_rx_tx.patch
 	source = throughput.patch
 	sha256sums = 01fbdb249b7ba2984df93a4bd11aecddd1ed904c6be10fc5d776e94b3110b2bf
