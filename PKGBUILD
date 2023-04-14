@@ -14,10 +14,12 @@ depends=('dkms')
 conflicts=("${_pkgname}")
 optdepends=('linux-headers: Build the module for Arch kernel'
             'linux-lts-headers: Build the module for LTS Arch kernel')
-source=("http://rtitwww.realtek.com/rtdrivers/cn/nic1/${_pkgname}-${pkgver}.tar.bz2" 'dkms.conf' '6.1.patch')
+source=("http://rtitwww.realtek.com/rtdrivers/cn/nic1/${_pkgname}-${pkgver}.tar.bz2" 'dkms.conf' '6.1.patch' 'aspm_rx_tx.patch' 'throughput.patch')
 sha256sums=('01fbdb249b7ba2984df93a4bd11aecddd1ed904c6be10fc5d776e94b3110b2bf'
             'ad4c67e0c74661d19b74872f98254184d4b04e32e4c57b338a84fbcefa4c721f'
-            '457d40c5e2e8f2b3436738ece848e52fa0866ba8906240f2e5bee193bf7384a4')
+            '457d40c5e2e8f2b3436738ece848e52fa0866ba8906240f2e5bee193bf7384a4'
+            '214d131495fb364b585195a78fdb415ec6d0dc75d31c5928078604562a93242d'
+            '6b14f160ea1f45d79efdbf9ac7bfe85d5c21a59606ad847b7af0e0bd716c9fb4')
 
 prepare() {
   patch -Np0 <6.1.patch

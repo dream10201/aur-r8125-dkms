@@ -1,7 +1,5 @@
-diff --git a/r8125-9.011.00/src/r8125.h b/r8125-9.011.00/src/r8125.h
-index 2aad6c5..e5e9894 100755
---- a/r8125-9.011.00/src/r8125.h
-+++ b/r8125-9.011.00/src/r8125.h
+--- r8125-9.011.00/src/r8125.h
++++ r8125-9.011.00/src/r8125.h
 @@ -398,7 +398,7 @@ do { \
  #define RSS_SUFFIX ""
  #endif
@@ -27,10 +25,8 @@ index 2aad6c5..e5e9894 100755
  #define RTL_NAPI_QUOTA(budget, ndev)            min(budget, budget)
  #define RTL_GET_PRIV(stuct_ptr, priv_struct)        container_of(stuct_ptr, priv_struct, stuct_ptr)
  #define RTL_GET_NETDEV(priv_ptr)            struct net_device *dev = priv_ptr->dev;
-diff --git a/r8125-9.011.00/src/r8125_n.c b/r8125-9.011.00/src/r8125_n.c
-index 6ca7201..6079c6c 100755
---- a/r8125-9.011.00/src/r8125_n.c
-+++ b/r8125-9.011.00/src/r8125_n.c
+--- r8125-9.011.00/src/r8125_n.c
++++ r8125-9.011.00/src/r8125_n.c
 @@ -16698,6 +16698,8 @@ rtl8125_rx_interrupt(struct net_device *dev,
  
                  skb->protocol = eth_type_trans(skb, dev);
