@@ -1,5 +1,5 @@
---- r8125-9.011.01/src/Makefile
-+++ r8125-9.011.01/src/Makefile
+--- r8125-9.012.03/src/Makefile
++++ r8125-9.012.03/src/Makefile
 @@ -35,16 +35,16 @@ ENABLE_REALWOW_SUPPORT = n
  ENABLE_DASH_SUPPORT = n
  ENABLE_DASH_PRINTER_SUPPORT = n
